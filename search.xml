@@ -14,8 +14,8 @@
           <a href="#STUM文档" class="heading-link"><i class="fas fa-link"></i></a><a href="#STUM文档" class="headerlink" title="STUM文档"></a><span class="exturl"><a class="exturl__link" href="https://theme-stun.github.io/docs/zh-CN/guide/primary.html#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95">STUM文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></h3>
       <hr>
 
-        <h3 id="优秀Hexo示范">
-          <a href="#优秀Hexo示范" class="heading-link"><i class="fas fa-link"></i></a><a href="#优秀Hexo示范" class="headerlink" title="优秀Hexo示范"></a>优秀Hexo示范</h3>
+        <h1 id="优秀Hexo示范">
+          <a href="#优秀Hexo示范" class="heading-link"><i class="fas fa-link"></i></a><a href="#优秀Hexo示范" class="headerlink" title="优秀Hexo示范"></a>优秀Hexo示范</h1>
       
         <h5 id="Case-1-向往的博客">
           <a href="#Case-1-向往的博客" class="heading-link"><i class="fas fa-link"></i></a><a href="#Case-1-向往的博客" class="headerlink" title="Case 1   向往的博客"></a><span class="exturl"><a class="exturl__link" href="https://uuanqin.top/">Case 1</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>   向往的博客</h5>
@@ -35,8 +35,8 @@
 
 <hr>
 
-        <h3 id="Formatter">
-          <a href="#Formatter" class="heading-link"><i class="fas fa-link"></i></a><a href="#Formatter" class="headerlink" title="Formatter"></a>Formatter</h3>
+        <h1 id="Formatter">
+          <a href="#Formatter" class="heading-link"><i class="fas fa-link"></i></a><a href="#Formatter" class="headerlink" title="Formatter"></a>Formatter</h1>
       <div class="table-container"><table>
 <thead>
 <tr>
@@ -128,16 +128,16 @@
 <figure class="highlight js"><div class="table-container"><table><tr><td class="code"><pre><span class="line">| 属性名       | 描述                                                         | 是否必需 | 默认值        |</span><br><span class="line">|------------|------------------------------------------------------------|--------|-------------|</span><br><span class="line">| title      | 页面标题                                                    | 是     | -           |</span><br><span class="line">| date       | 页面创建日期                                                | 是     | -           |</span><br><span class="line">| type       | 标签、分类和友情链接三个页面需要配置                          | 是     | -           |</span><br><span class="line">| updated    | 页面更新日期                                                | 否     | -           |</span><br><span class="line">| description| 页面描述                                                    | 否     | -           |</span><br><span class="line">| keywords   | 页面关键字                                                  | 否     | -           |</span><br><span class="line">| comments   | 显示页面评论模块（默认为<span class="literal">true</span>）                               | 否     | <span class="literal">true</span>        |</span><br><span class="line">| top_img    | 页面顶部图片                                                | 否     | -           |</span><br><span class="line">| mathjax    | 显示mathjax（当设置mathjax的<span class="attr">per_page</span>: <span class="literal">false</span>时，才需要配置）  | 否     | <span class="literal">false</span>       |</span><br><span class="line">| katex      | 显示katex（当设置katex的<span class="attr">per_page</span>: <span class="literal">false</span>时，才需要配置）      | 否     | <span class="literal">false</span>       |</span><br><span class="line">| aside      | 显示侧边栏（默认为<span class="literal">true</span>）                                     | 否     | <span class="literal">true</span>        |</span><br><span class="line">| highlight_shrink | 配置代码框是否展开（<span class="literal">true</span>/<span class="literal">false</span>）（默认为设置中highlight_shrink的配置） | 否     | -           |</span><br></pre></td></tr></table></div></figure>
 <hr>
 
-        <h3 id="Hexo常用操作命令">
-          <a href="#Hexo常用操作命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo常用操作命令" class="headerlink" title="Hexo常用操作命令"></a>Hexo常用操作命令</h3>
+        <h1 id="Hexo常用操作命令">
+          <a href="#Hexo常用操作命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo常用操作命令" class="headerlink" title="Hexo常用操作命令"></a>Hexo常用操作命令</h1>
       
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/hexo.png">
       
 
 <hr>
 
-        <h3 id="Hexo-Obsidian高可用搭建说明">
-          <a href="#Hexo-Obsidian高可用搭建说明" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo-Obsidian高可用搭建说明" class="headerlink" title="Hexo+Obsidian高可用搭建说明"></a>Hexo+Obsidian高可用搭建说明</h3>
+        <h1 id="Hexo-Obsidian高可用搭建说明">
+          <a href="#Hexo-Obsidian高可用搭建说明" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo-Obsidian高可用搭建说明" class="headerlink" title="Hexo+Obsidian高可用搭建说明"></a>Hexo+Obsidian高可用搭建说明</h1>
       
         <h4 id="图片保存">
           <a href="#图片保存" class="heading-link"><i class="fas fa-link"></i></a><a href="#图片保存" class="headerlink" title="图片保存"></a>图片保存</h4>
@@ -153,8 +153,8 @@
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/file-20241021181834513.png">
       </h2>
       
-        <h3 id="Hexo搭建教程">
-          <a href="#Hexo搭建教程" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo搭建教程" class="headerlink" title="Hexo搭建教程"></a>Hexo搭建教程</h3>
+        <h1 id="Hexo搭建教程">
+          <a href="#Hexo搭建教程" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo搭建教程" class="headerlink" title="Hexo搭建教程"></a>Hexo搭建教程</h1>
       
         <h5 id="知乎教程">
           <a href="#知乎教程" class="heading-link"><i class="fas fa-link"></i></a><a href="#知乎教程" class="headerlink" title="知乎教程"></a><span class="exturl"><a class="exturl__link" href="https://zhuanlan.zhihu.com/p/60578464">知乎教程</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></h5>
@@ -166,8 +166,8 @@
           <a href="#CSDN个性化搭建" class="heading-link"><i class="fas fa-link"></i></a><a href="#CSDN个性化搭建" class="headerlink" title="CSDN个性化搭建"></a><span class="exturl"><a class="exturl__link" href="https://blog.csdn.net/as480133937/article/details/100138838">CSDN个性化搭建</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></h5>
       <hr>
 
-        <h3 id="编辑器使用转型">
-          <a href="#编辑器使用转型" class="heading-link"><i class="fas fa-link"></i></a><a href="#编辑器使用转型" class="headerlink" title="编辑器使用转型"></a>编辑器使用转型</h3>
+        <h1 id="编辑器使用转型经验">
+          <a href="#编辑器使用转型经验" class="heading-link"><i class="fas fa-link"></i></a><a href="#编辑器使用转型经验" class="headerlink" title="编辑器使用转型经验"></a>编辑器使用转型经验</h1>
       <ul>
 <li>Obsidian<blockquote>
 <p>适合编辑文本，编辑体验比vscode好<br>缺点是不适合插入图片，无法设置子分类，无法自动生成时间<br>使用简介，各种键入反应快捷</p>

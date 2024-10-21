@@ -26,19 +26,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/posts/2991444807.html</url>
-    <content><![CDATA[<p>今天是我第一次使用hexo搭建个人博客</p>
-<ul>
-<li>非常的开心</li>
-<li>今后此处就是我技术沉淀的池塘</li>
-</ul>
-]]></content>
-      <categories>
-        <category>随意</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo使用手册</title>
     <url>/posts/1899991772.html</url>
     <content><![CDATA[
@@ -73,8 +60,8 @@
 
 <hr>
 
-        <h1 id="Formatter">
-          <a href="#Formatter" class="heading-link"><i class="fas fa-link"></i></a><a href="#Formatter" class="headerlink" title="Formatter"></a>Formatter</h1>
+        <h1 id="Formatter介绍">
+          <a href="#Formatter介绍" class="heading-link"><i class="fas fa-link"></i></a><a href="#Formatter介绍" class="headerlink" title="Formatter介绍"></a>Formatter介绍</h1>
       <div class="table-container"><table>
 <thead>
 <tr>
@@ -177,14 +164,14 @@
         <h4 id="图片保存">
           <a href="#图片保存" class="heading-link"><i class="fas fa-link"></i></a><a href="#图片保存" class="headerlink" title="图片保存"></a>图片保存</h4>
       
-        <h2 id="图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下路径">
-          <a href="#图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下路径" class="heading-link"><i class="fas fa-link"></i></a><a href="#图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下路径" class="headerlink" title="图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1. Ob上安装插件2. 配置Ob相关设置3. 安装插件hexo-asset–image4. 修改_config.yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下路径"></a>图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置<br>1. Ob上安装插件<br>
+        <h2 id="图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下格式路径">
+          <a href="#图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下格式路径" class="heading-link"><i class="fas fa-link"></i></a><a href="#图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1-Ob上安装插件2-配置Ob相关设置3-安装插件hexo-asset–image4-修改-config-yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下格式路径" class="headerlink" title="图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置1. Ob上安装插件2. 配置Ob相关设置3. 安装插件hexo-asset–image4. 修改_config.yml修改下列属性为true以上步骤完成之后便可以正常使用每次在Ob中保存图片便会生成如下格式路径"></a>图片保存在Obsidian有自己的语法，要实现既可以在Ob上预览又可以在博客上显示出来需要一系列的设置<br>1. <strong>Ob上安装插件</strong><br>
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/file-20241021180920049.png">
-      <br>2. 配置Ob相关设置<br>
+      <br>2. <strong>配置Ob相关设置</strong><br>
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/file-20241021181007212.png">
       <br>
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/file-20241021181012702.png">
-      <br>3. 安装插件hexo-asset–image<br><figure class="highlight plaintext"><div class="table-container"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></div></figure><br>4. 修改_config.yml<br>修改下列属性为true<br><figure class="highlight js"><div class="table-container"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder</span>: <span class="literal">true</span></span><br></pre></td></tr></table></div></figure><br>以上步骤完成之后便可以正常使用<br>每次在Ob中保存图片便会生成如下路径<br>
+      <br>3. <strong>安装插件hexo-asset–image</strong><br><figure class="highlight plaintext"><div class="table-container"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></div></figure><br>4. <strong>修改_config.yml</strong><br>修改下列属性为true<br><figure class="highlight plaintext"><div class="table-container"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></div></figure><br>以上步骤完成之后便可以正常使用<br>每次在Ob中保存图片便会生成如下格式路径<br>
         <img class="lazyload lazyload-gif" src="/images/loading.svg" data-src="/posts/1899991772/file-20241021181834513.png">
       </h2>
       
@@ -221,5 +208,18 @@
         <tag>Hexo</tag>
         <tag>GithubPages</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/posts/2991444807.html</url>
+    <content><![CDATA[<p>今天是我第一次使用hexo搭建个人博客</p>
+<ul>
+<li>非常的开心</li>
+<li>今后此处就是我技术沉淀的池塘</li>
+</ul>
+]]></content>
+      <categories>
+        <category>随意</category>
+      </categories>
   </entry>
 </search>

@@ -1965,7 +1965,7 @@ body::before {
 }
 .highlight figcaption span:first-child::before {
   margin: 0 0.6rem 0 0;
-  color: $highlight-code-lang-color;
+  color: var(--color-gray-550);
 }
 .highlight.markdown figcaption span:first-child::before {
   content: 'markdown';
@@ -2104,8 +2104,8 @@ body::before {
   border-radius: 0.25rem;
   width: 100%;
   line-height: 1.7;
-  color: $highlight-color;
-  background-color: $highlight-background;
+  color: var(--color-gray-850);
+  background-color: var(--color-gray-200);
 }
 .highlight pre,
 .highlight code {
@@ -2122,9 +2122,11 @@ body::before {
 .highlight figcaption {
   position: relative;
   width: 100%;
-  color: $highlight-header-color;
-  background-color: $highlight-header-bg-color;
+  color: var(--color-gray-850);
+  background-color: var(--color-gray-200);
   zoom: 1;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 .highlight figcaption:before,
 .highlight figcaption:after {
@@ -2137,7 +2139,7 @@ body::before {
 .highlight figcaption span:first-child {
   float: left;
   margin-left: 0.5rem;
-  color: $highlight-code-note-color;
+  color: var(--color-gray-850);
 }
 .highlight figcaption span.external-link {
   float: right;
@@ -2145,27 +2147,90 @@ body::before {
 }
 .highlight figcaption.custom {
   min-height: 1.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
 }
 .highlight figcaption.custom .custom-lang {
   float: left;
   margin: 0 0.6rem;
-  color: $highlight-code-lang-color;
+  color: var(--color-gray-550);
+}
+.highlight figcaption.custom .custom-carbon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0.2rem 0 0 0.5rem;
+  font-size: 0;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.highlight figcaption.custom .custom-carbon-dot {
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.highlight figcaption.custom .custom-carbon-dot--red {
+  background-color: #ff5f56;
+}
+.highlight figcaption.custom .custom-carbon-dot--yellow {
+  background-color: #ffbd2e;
+}
+.highlight figcaption.custom .custom-carbon-dot--green {
+  background-color: #27c93f;
+}
+.highlight figcaption:not(.custom) {
+  background-color: var(--color-gray-200);
+}
+.highlight figcaption:not(.custom) + .table-container td.code,
+.highlight figcaption:not(.custom) + table td.code {
+  padding: 0;
+}
+.highlight figcaption:not(.custom) + .table-container .line::before,
+.highlight figcaption:not(.custom) + table .line::before {
+  content: counter(line);
+  display: inline-block;
+  margin-right: 0.5rem;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 0 0.8rem 0 0.4rem;
+  min-width: 1rem;
+  text-align: right;
+  color: var(--color-gray-550);
+  background-color: var(--color-gray-200);
+  counter-increment: line;
 }
 .highlight td.gutter {
-  border-right: 1px solid $gap-line-color;
+  border-right: 1px solid var(--color-gray-300);
   padding: 0.4rem 0.6rem;
   width: 2rem;
-  background-color: $highlight-side-bg-color;
+  background-color: var(--color-gray-200);
   display: none;
 }
 .highlight td.gutter pre {
   text-align: right;
   white-space: nowrap;
-  color: $highlight-side-color;
+  color: var(--color-gray-550);
   background-color: inherit;
 }
+.highlight td.code {
+  padding: 0.5rem 0.75rem;
+}
 .highlight .marked {
-  background-color: $marked-line-bg-color;
+  background-color: var(--color-gray-260);
 }
 .highlight .emphasis {
   font-style: italic;
@@ -2174,11 +2239,11 @@ body::before {
   font-weight: bold;
 }
 .highlight .comment {
-  color: $highlight-comment;
+  color: #969896;
 }
 .highlight .quote,
 .highlight .params {
-  color: $highlight-color;
+  color: var(--color-gray-850);
 }
 .highlight .selector-tag,
 .highlight .template-variable,
@@ -2187,7 +2252,7 @@ body::before {
 .highlight .regexp,
 .highlight .name,
 .highlight .tag {
-  color: $highlight-red;
+  color: #c82829;
 }
 .highlight .builtin-name,
 .highlight .literal,
@@ -2195,12 +2260,12 @@ body::before {
 .highlight .type,
 .highlight .meta,
 .highlight .link {
-  color: $highlight-orange;
+  color: #ee8019;
 }
 .highlight .class .keyword:first-child + .title,
 .highlight .built_in,
 .highlight .attribute {
-  color: $highlight-yellow;
+  color: #eab700;
 }
 .highlight .class .keyword ~ .title,
 .highlight .string .template-variable,
@@ -2209,17 +2274,17 @@ body::before {
 .highlight .class,
 .highlight .subst,
 .highlight .regexp {
-  color: $highlight-green;
+  color: #4eb4b4;
 }
 .highlight .string,
 .highlight .symbol,
 .highlight .bullet,
 .highlight .addition {
-  color: $highlight-aqua;
+  color: #4dc14c;
 }
 .highlight .title,
 .highlight .section {
-  color: $highlight-blue;
+  color: #2a75c8;
 }
 .highlight .meta-keyword,
 .highlight .doctag,
@@ -2230,11 +2295,11 @@ body::before {
 .highlight .function,
 .highlight .tag .attr,
 .highlight .keyword {
-  color: $highlight-purple;
+  color: #be4dbc;
 }
 .bash .meta,
 .rust .meta {
-  color: $highlight-comment;
+  color: #969896;
 }
 .c\+\+ .built_in,
 .cpp .built_in,
@@ -2245,21 +2310,21 @@ body::before {
 .scss .variable,
 .styl .variable,
 .stylus .variable {
-  color: $highlight-color;
+  color: var(--color-gray-850);
 }
 .html .meta,
 .xml .meta,
 .yaml .attr,
 .yml .attr {
-  color: $highlight-red;
+  color: #c82829;
 }
 .js .params,
 .javascript .params {
-  color: $highlight-orange;
+  color: #ee8019;
 }
 .json .attr,
 .swift .type {
-  color: $highlight-yellow;
+  color: #eab700;
 }
 .variable .variable,
 .bash .variable,
@@ -2268,13 +2333,13 @@ body::before {
 .c\# .meta,
 .css .number,
 .diff .meta {
-  color: $highlight-green;
+  color: #4eb4b4;
 }
 .md .section,
 .markdown .section,
 .py .string .meta,
 .python .string .meta {
-  color: $highlight-aqua;
+  color: #4dc14c;
 }
 .bash .built_in,
 .css .built_in,
@@ -2284,21 +2349,27 @@ body::before {
 .shell .meta,
 .shell .keyword,
 .shell .built_in {
-  color: $highlight-blue;
+  color: #2a75c8;
 }
 .ini .attr,
 .objectivec .meta,
 .yaml .type,
 .yml .type {
-  color: $highlight-purple;
+  color: #be4dbc;
 }
 .diff .addition {
-  color: $highlight-addition-color;
-  background-color: $highlight-addition-bg-color;
+  color: #292;
+  background-color: #f0fff4;
 }
 .diff .deletion {
-  color: $highlight-deletion-color;
-  background-color: $highlight-deletion-bg-color;
+  color: #d44;
+  background-color: #ffeef0;
+}
+.nightmode .diff .addition {
+  background-color: transparent;
+}
+.nightmode .diff .deletion {
+  background-color: transparent;
 }
 .ending {
   padding: 1rem 0 0;
@@ -2627,7 +2698,7 @@ a.fancybox {
   cursor: pointer;
 }
 .copy-button i {
-  color: $copy-button-color;
+  color: var(--color-gray-550);
 }
 .sticky-top {
   position: absolute;

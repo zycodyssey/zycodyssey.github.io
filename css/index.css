@@ -1965,7 +1965,7 @@ body::before {
 }
 .highlight figcaption span:first-child::before {
   margin: 0 0.6rem 0 0;
-  color: var(--color-gray-550);
+  color: $highlight-code-lang-color;
 }
 .highlight.markdown figcaption span:first-child::before {
   content: 'markdown';
@@ -2104,8 +2104,8 @@ body::before {
   border-radius: 0.25rem;
   width: 100%;
   line-height: 1.7;
-  color: var(--color-gray-850);
-  background-color: var(--color-gray-200);
+  color: $highlight-color;
+  background-color: $highlight-background;
 }
 .highlight pre,
 .highlight code {
@@ -2122,8 +2122,8 @@ body::before {
 .highlight figcaption {
   position: relative;
   width: 100%;
-  color: var(--color-gray-850);
-  background-color: var(--color-gray-200);
+  color: $highlight-header-color;
+  background-color: $highlight-header-bg-color;
   zoom: 1;
 }
 .highlight figcaption:before,
@@ -2137,7 +2137,7 @@ body::before {
 .highlight figcaption span:first-child {
   float: left;
   margin-left: 0.5rem;
-  color: var(--color-gray-850);
+  color: $highlight-code-note-color;
 }
 .highlight figcaption span.external-link {
   float: right;
@@ -2149,23 +2149,23 @@ body::before {
 .highlight figcaption.custom .custom-lang {
   float: left;
   margin: 0 0.6rem;
-  color: var(--color-gray-550);
+  color: $highlight-code-lang-color;
 }
 .highlight td.gutter {
-  border-right: 1px solid var(--color-gray-300);
+  border-right: 1px solid $gap-line-color;
   padding: 0.4rem 0.6rem;
   width: 2rem;
-  background-color: var(--color-gray-200);
+  background-color: $highlight-side-bg-color;
   display: none;
 }
 .highlight td.gutter pre {
   text-align: right;
   white-space: nowrap;
-  color: var(--color-gray-550);
+  color: $highlight-side-color;
   background-color: inherit;
 }
 .highlight .marked {
-  background-color: var(--color-gray-260);
+  background-color: $marked-line-bg-color;
 }
 .highlight .emphasis {
   font-style: italic;
@@ -2174,11 +2174,11 @@ body::before {
   font-weight: bold;
 }
 .highlight .comment {
-  color: #969896;
+  color: $highlight-comment;
 }
 .highlight .quote,
 .highlight .params {
-  color: var(--color-gray-850);
+  color: $highlight-color;
 }
 .highlight .selector-tag,
 .highlight .template-variable,
@@ -2187,7 +2187,7 @@ body::before {
 .highlight .regexp,
 .highlight .name,
 .highlight .tag {
-  color: #c82829;
+  color: $highlight-red;
 }
 .highlight .builtin-name,
 .highlight .literal,
@@ -2195,12 +2195,12 @@ body::before {
 .highlight .type,
 .highlight .meta,
 .highlight .link {
-  color: #ee8019;
+  color: $highlight-orange;
 }
 .highlight .class .keyword:first-child + .title,
 .highlight .built_in,
 .highlight .attribute {
-  color: #eab700;
+  color: $highlight-yellow;
 }
 .highlight .class .keyword ~ .title,
 .highlight .string .template-variable,
@@ -2209,17 +2209,17 @@ body::before {
 .highlight .class,
 .highlight .subst,
 .highlight .regexp {
-  color: #4eb4b4;
+  color: $highlight-green;
 }
 .highlight .string,
 .highlight .symbol,
 .highlight .bullet,
 .highlight .addition {
-  color: #4dc14c;
+  color: $highlight-aqua;
 }
 .highlight .title,
 .highlight .section {
-  color: #2a75c8;
+  color: $highlight-blue;
 }
 .highlight .meta-keyword,
 .highlight .doctag,
@@ -2230,11 +2230,11 @@ body::before {
 .highlight .function,
 .highlight .tag .attr,
 .highlight .keyword {
-  color: #be4dbc;
+  color: $highlight-purple;
 }
 .bash .meta,
 .rust .meta {
-  color: #969896;
+  color: $highlight-comment;
 }
 .c\+\+ .built_in,
 .cpp .built_in,
@@ -2245,21 +2245,21 @@ body::before {
 .scss .variable,
 .styl .variable,
 .stylus .variable {
-  color: var(--color-gray-850);
+  color: $highlight-color;
 }
 .html .meta,
 .xml .meta,
 .yaml .attr,
 .yml .attr {
-  color: #c82829;
+  color: $highlight-red;
 }
 .js .params,
 .javascript .params {
-  color: #ee8019;
+  color: $highlight-orange;
 }
 .json .attr,
 .swift .type {
-  color: #eab700;
+  color: $highlight-yellow;
 }
 .variable .variable,
 .bash .variable,
@@ -2268,13 +2268,13 @@ body::before {
 .c\# .meta,
 .css .number,
 .diff .meta {
-  color: #4eb4b4;
+  color: $highlight-green;
 }
 .md .section,
 .markdown .section,
 .py .string .meta,
 .python .string .meta {
-  color: #4dc14c;
+  color: $highlight-aqua;
 }
 .bash .built_in,
 .css .built_in,
@@ -2284,27 +2284,21 @@ body::before {
 .shell .meta,
 .shell .keyword,
 .shell .built_in {
-  color: #2a75c8;
+  color: $highlight-blue;
 }
 .ini .attr,
 .objectivec .meta,
 .yaml .type,
 .yml .type {
-  color: #be4dbc;
+  color: $highlight-purple;
 }
 .diff .addition {
-  color: #292;
-  background-color: #f0fff4;
+  color: $highlight-addition-color;
+  background-color: $highlight-addition-bg-color;
 }
 .diff .deletion {
-  color: #d44;
-  background-color: #ffeef0;
-}
-.nightmode .diff .addition {
-  background-color: transparent;
-}
-.nightmode .diff .deletion {
-  background-color: transparent;
+  color: $highlight-deletion-color;
+  background-color: $highlight-deletion-bg-color;
 }
 .ending {
   padding: 1rem 0 0;
@@ -2633,7 +2627,7 @@ a.fancybox {
   cursor: pointer;
 }
 .copy-button i {
-  color: var(--color-gray-550);
+  color: $copy-button-color;
 }
 .sticky-top {
   position: absolute;
@@ -3077,4 +3071,57 @@ a.fancybox {
     padding: 0.5rem 1rem;
     width: 100%;
   }
+}
+.highlight-wrap[data-rel] {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 30px 0px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px 0px rgba(0,0,0,0.4);
+  margin: 35px 0;
+}
+.highlight-wrap[data-rel] ::-webkit-scrollbar {
+  height: 10px;
+}
+.highlight-wrap[data-rel] ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+.highlight-wrap[data-rel] ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.highlight-wrap[data-rel]::before {
+  color: #fff;
+  content: attr(data-rel);
+  height: 38px;
+  line-height: 38px;
+  background: #21252b;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  padding: 0px 80px;
+  text-indent: 15px;
+  float: left;
+}
+.highlight-wrap[data-rel]::after {
+  content: ' ';
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc625d;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 20px;
+  margin-top: 13px;
+  -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+  -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+  box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+  z-index: 3;
 }
